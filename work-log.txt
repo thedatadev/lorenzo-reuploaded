@@ -1,0 +1,191 @@
+Work Log - Edrian Gomez
+
+This is a log of the tasks I performed throughout the course of the project. 
+I have anonymised the identities of my group members.
+
+Date started:  02/08/18
+Date finished: 21/10/18
+Total entries: 22
+
+
+Week 2
+(02/08/18)
+- Group formed with member A, member B and member C;
+- I created the Trello, Bitbucket and Slack accounts for the team;
+- I volunteered to be scrum master;
+- We decided to do research on topics 1 and 3 by next Sunday night and
+  come to a conclusion before the next lab;
+- I created a Google document so that we could share any ideas we come up
+  with before the next meeting or discussion;
+
+(05/08/18)
+- Held a discussion on campus about each members' individual research;
+- Decided as a group to pursue topic 1;
+- Conducted a brainstorming session;
+
+Week 3
+(12/01/18)
+- Edited and finalised the project proposal with other group members
+- Submitted the group proposal
+
+Week 4
+(16/08/18)
+- Held a discussion with member B and member C during the lab to sketch a brief outline of
+  the required tasks for the first sprint
+- Created a chatbot mockup to experiment with Vue.js framework and how it can be
+  used with the Flask framework
+- Downloaded Airbnb dataset about Sydney accommodation listings and uploaded it
+  to the bitbucket repository. Included a summary of column names and data types
+
+(19/08/18)
+- Met up with the whole group and decided on the design of the first iteration
+  of our project
+- I created a basic frontend client to feed user input to the backend, as well as
+  receive search results from the backend
+- Drew up a refined version of the project architecture diagram and shared it on
+  the Slack channel
+
+Week 5
+(22/08/18)
+- Met up with member B and member C to do further collaboration on the first sprint MVP
+- Deployed a database on Amazon Relational Database Servers (RDS)
+- Wrote up a Flask REST API that connects to the Amazon RDS database and retrieves data
+
+(23/08/18)
+- Finalised the basic version of the client (for sprint #1) and pushed it to the git repo
+
+Week 6
+(28/08/18)
+- Met up with member B and member C to combine the search engine module, REST API and chatbot module
+- Wrote a search engine module which accepts parameters from the chatbot module and
+  generates an appropriate SQL query using the SQLAlchemy library. For example:
+  "I would like to stay in Sydney" => "SELECT * FROM listings WHERE location = Sydney"
+
+(29/08/18)
+- Updated the database by adding more features
+- Ran local tests on the entire system to catch database errors
+- Prepared diagrams and documents to present at the demo tomorrow
+- Finished designing the first mobile layout wireframe and pushed it to the repo
+
+Week 7
+- Nothing recorded this week
+
+Week 8
+(10/09/18)
+- Imported the general and chatbot HTML/CSS from the client wireframes and
+  integrated them into the main client app
+
+(11/09/18)
+- Designed and implemented CSS styling for desktop devices
+
+(13/09/18)
+- Implemented JSON Web Token authentication on the frontend and backend
+- Created a user database which associates one conversation to one user
+- Designed and implemented login, registration, homepage and dashboard GUI
+- Ran end-to-end tests from account creation to chatbot usage to search results
+- Created a user story diagram to show our mentor in demo #2
+
+(14/09/18)
+- Implemented a Vuex data store on the client side so that data such as user
+  data, search results, and chat history can be shared across multiple components
+- Designed a database schema for user account management to replace the previous
+  in-memory global variable
+
+(15/09/18)
+- Restructured the original flask-app using the Flask Blueprints design patterns, making
+  the API more modularised and manageable
+- Created models for conversations i.e. the conversations which users have with the chatbot
+- Implemented the new database for Users and Conversations called main_db to replace the
+  previous in-memory global variable
+- Redefined the model for Listings to include more columns (54 columns in total)
+- Cleaned the original AirBnB dataset and deployed it to AWS
+- Deployed the main_db to AWS
+- Conducted tests to verify the API is still functional after the overhaul
+- Wrote up a guide on how to use the API with Postman so that other members may test it on
+  their machines easily
+
+Week 9
+- Nothing recorded this week
+
+Mid-semester break
+- Nothing recorded this week
+
+Week 10
+(3/10/18)
+- Synchronized the client with the updated REST API
+- Added functional links and routers to the user dashboard
+- Enabled page navigation
+- Created functions to create new Conversation instances
+- Created variables to maintain state of active conversation and listing objects
+  which are used across many components
+- Created a dedicated page for listing details (albeit without styling)
+
+Week 11
+(10/11/18)
+- Create a new and improved design for the following pages:
+  • dashboard
+  • search history
+  • account settings
+  • chat interface
+  • single listing
+  • search results
+  • advertise (posting a new listing)
+- Created placeholder pages for the following:
+  • booking history
+  • view booking
+- Fixed a state persistence issue with Vue JS when refreshing pages
+- Refactored some CSS
+- Reviewed member A's booking model to better understand how to implement
+  a listing availability calendar
+
+(12/11/18)
+- Implemented frontend pages for:
+  • booking history
+  • advertising history
+  • view booking
+  • edit listing (advertise)
+- created frontend and backend error handlers for authentication
+- fixed page navigation bug
+- started on implementing param edits in the chat interface
+- modified the api to return params instead of messages for the new chat interface
+
+(13/11/18)
+- Added a chatbot face to the dashboard (as suggested by our mentor) with the caption
+  "Tell me what you're looking for" to hint at the user that the search involves
+  some sort of chat interaction
+- Modified member A's implementation of the booking routes and created a function in
+  the client with JavaScript to send a HTTP request to make new bookings for a user
+- Met up with and discussed with member B and member C about how to structure the report and
+  final demo presentation
+
+(14/11/18)
+- Added two new modules for better codebase structure: advertise_module and booking_module
+- Created an endpoint to create a new listing for the advertising module
+- Completed pages to display information about:
+  - listing neighbourhood
+  - listing amenities
+  - listing house rules
+- Created an endpoint to retrieve a user's collection of listings they've advertised
+- Fixed a bug where parameters in a previously viewed chat would appear in a newly
+  created chat (spent 1.5 to 2 hours on this one bug!)
+
+Week 12
+(16/10/18)
+- Enabled image uploading from client when posting a new listing
+- Created an S3 bucket on AWS to house all uploaded images
+- Enabled parameter edits via the chat interface - user clicks on parameter tags
+  and is able edit preferences and save them
+- Created routes to edit parameters
+- Created a booking availability calendar to display booking availabilities for
+  the next six months (from the current month)
+
+(18/10/18)
+- Implemented some last minute pre-demo fixes
+- Clarified various matters with our mentor with regard to code submission and
+  submission of a draft report
+- Met up with other group members after the demo to work on the report draft
+
+(21/10/18)
+- Final minor changes to client
+- Final changes to report
+- Final submission
