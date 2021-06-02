@@ -48,5 +48,5 @@ sklearn==0.0
 SQLAlchemy==1.2.11
 torch==0.4.1
 torchvision==0.2.1
-urllib3==1.23
+urllib3==1.26.5
 Werkzeug==0.14.1
