@@ -1,5 +1,8 @@
 # Lorenzo (re-uploaded)
 
+https://user-images.githubusercontent.com/48514825/130351300-fbe5143e-6c99-4666-9e95-86320230df72.mp4
+
+
 ## NOTE:
 This is a re-upload of a university project without API secrets/keys and other sensitive information. My role in this project was to write the entire client as well as the majority of the API server. The project started on 02/08/18 and ended on 21/10/18. A complete log of all the work I had done on this project can be found in the work-log.txt file.
 
